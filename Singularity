@@ -15,12 +15,12 @@ export VERSION=1.0
 %post
  # set versions of software to install
   export VERSION=1.0
-  export SPADES_VERSION=3.13.2
-  export SHOVILL_VERSION=
+  export SPADES_VERSION=3.13.0
+  export SHOVILL_VERSION=1.0.9
   export SKESA_VERSION=2.3.0
   
   export PATH=/opt/conda/bin:PATH
-
+  conda upgrade -c defaults --override-channels conda
   conda config --add channels conda-forge
   conda config --add channels defaults
   conda config --add channels r
